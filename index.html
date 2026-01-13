@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hely Saúl Camargo Riofrío | Data Analyst</title>
+    <meta name="description" content="Professional Data Analyst specializing in Power BI, Python, and SQL">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        powerbi: {
+                            DEFAULT: '#F2C811',
+                            blue: '#3B82F6',
+                            accent: '#2563EB'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(135deg, #3B82F6, #60A5FA);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(59, 130, 246, 0.15);
+        }
+        .fade-in {
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-200 antialiased">
+    <nav class="fixed top-0 w-full bg-slate-950/90 backdrop-blur-md z-50 border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-lg font-semibold gradient-text">Hely Saúl Camargo Riofrío</a>
+            <div class="flex items-center gap-8">
+                <div class="hidden md:flex gap-6 text-sm">
+                    <a href="#about" class="hover:text-blue-400 transition-colors" data-en="About" data-es="Sobre mí">About</a>
+                    <a href="#skills" class="hover:text-blue-400 transition-colors" data-en="Skills" data-es="Habilidades">Skills</a>
+                    <a href="#portfolio" class="hover:text-blue-400 transition-colors" data-en="Portfolio" data-es="Portafolio">Portfolio</a>
+                    <a href="#contact" class="hover:text-blue-400 transition-colors" data-en="Contact" data-es="Contacto">Contact</a>
+                </div>
+                <button id="langToggle" class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-800 hover:bg-slate-700 transition-colors text-sm font-medium">
+                    <span id="currentLang">EN</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="min-h-screen flex items-center justify-center px-6 pt-20">
+        <div class="max-w-4xl mx-auto text-center fade-in">
+            <div class="mb-6">
+                <img src="Hely Camargo Simple.png" alt="Hely Saúl Camargo" class="w-40 h-40 mx-auto rounded-full object-cover border-4 border-blue-600 mb-8 shadow-xl shadow-blue-900/20">
+            </div>
+            <p class="text-blue-400 font-medium tracking-widest uppercase text-sm mb-4" data-en="Data Analyst & BI Specialist" data-es="Analista de Datos y Especialista BI">Data Analyst & BI Specialist</p>
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6">
+                Hely Saúl<br><span class="gradient-text">Camargo Riofrío</span>
+            </h1>
+            <p class="text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed" data-en="Transforming chaotic datasets into strategic assets. Specialized in Data Cleaning and BI for Automotive, Tech, and Sports sectors." data-es="Transformando bases de datos desordenadas en activos estratégicos. Especializado en limpieza de datos y BI para los sectores Automotriz, Tecnológico y Deportivo.">
+                Transforming chaotic datasets into strategic assets. Specialized in Data Cleaning and BI for Automotive, Tech, and Sports sectors.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#portfolio" class="px-8 py-3 bg-blue-600 hover:bg-blue-500 text-white rounded-lg font-medium transition-colors" data-en="View Portfolio" data-es="Ver Portafolio">View Portfolio</a>
+                <a href="#contact" class="px-8 py-3 border border-slate-700 hover:border-blue-500 text-slate-300 hover:text-white rounded-lg font-medium transition-all" data-en="Get in Touch" data-es="Contactar">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <p class="text-blue-400 font-medium tracking-widest uppercase text-sm mb-4" data-en="Professional Profile" data-es="Perfil Profesional">Professional Profile</p>
+                    <h2 class="text-4xl font-bold text-white mb-6" data-en="Driven by a hunger for knowledge and data precision" data-es="Impulsado por el hambre de conocimiento y la precisión de datos">Driven by a hunger for knowledge and data precision</h2>
+                    <p class="text-slate-400 leading-relaxed mb-6" data-en="I am a dedicated Data Analyst focused on the 'less is more' philosophy. I specialize in taking disorganized databases and structuring them into clear, high-impact executive dashboards." data-es="Soy un Analista de Datos dedicado, enfocado en la filosofía de 'menos es más'. Me especializo en tomar bases de datos desorganizadas y estructurarlas en dashboards ejecutivos claros y de alto impacto.">
+                        I am a dedicated Data Analyst focused on the 'less is more' philosophy. I specialize in taking disorganized databases and structuring them into clear, high-impact executive dashboards.
+                    </p>
+                    <p class="text-slate-400 leading-relaxed" data-en="With a strong background in Power BI (University Extension Master) and Python, I am constantly learning to provide the most efficient data solutions." data-es="Con una sólida formación en Power BI (Master de Extensión Universitaria) y Python, estoy en constante aprendizaje para brindar las soluciones de datos más eficientes.">
+                        With a strong background in Power BI (University Extension Master) and Python, I am constantly learning to provide the most efficient data solutions.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 card-hover">
+                        <div class="text-4xl font-bold text-blue-400 mb-2">500+</div>
+                        <p class="text-slate-400" data-en="Learning Hours" data-es="Horas de Formación">Learning Hours</p>
+                    </div>
+                    <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 card-hover">
+                        <div class="text-4xl font-bold text-blue-400 mb-2">10+</div>
+                        <p class="text-slate-400" data-en="Full Projects" data-es="Proyectos Completos">Full Projects</p>
+                    </div>
+                    <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 card-hover">
+                        <div class="text-4xl font-bold text-blue-400 mb-2">10+</div>
+                        <p class="text-slate-400" data-en="BI Dashboards" data-es="Dashboards BI">BI Dashboards</p>
+                    </div>
+                    <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 card-hover">
+                        <div class="text-4xl font-bold text-blue-400 mb-2">Dual</div>
+                        <p class="text-slate-400" data-en="English/Spanish" data-es="Inglés/Español">English/Spanish</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 px-6 bg-slate-900/50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <p class="text-blue-400 font-medium tracking-widest uppercase text-sm mb-4" data-en="Technical Arsenal" data-es="Arsenal Técnico">Technical Arsenal</p>
+                <h2 class="text-4xl font-bold text-white" data-en="Technologies & Certifications" data-es="Tecnologías y Certificaciones">Technologies & Certifications</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-slate-900 p-8 rounded-xl border border-slate-800 card-hover">
+                    <div class="w-12 h-12 bg-blue-600/20 rounded-lg flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-4" data-en="Data Visualization" data-es="Visualización de Datos">Data Visualization</h3>
+                    <ul class="space-y-3 text-slate-400">
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 bg-blue-400 rounded-full"></span>Power BI (Master)</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 bg-blue-400 rounded-full"></span>Excel Advanced</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 bg-blue-400 rounded-full"></span>DAX / Power Query</li>
+                    </ul>
+                </div>
+                <div class="bg-slate-900 p-8 rounded-xl border border-slate-800 card-hover">
+                    <div class="w-12 h-12 bg-blue-600/20 rounded-lg flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-4" data-en="Programming" data-es="Programación">Programación</h3>
+                    <ul class="space-y-3 text-slate-400">
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 bg-blue-400 rounded-full"></span>Python (Pandas/NumPy)</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 bg-blue-400 rounded-full"></span>SQL (Data Cleaning)</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 bg-blue-400 rounded-full"></span>Automation Scripts</li>
+                    </ul>
+                </div>
+                <div class="bg-blue-900/10 p-8 rounded-xl border border-blue-500/30 card-hover">
+                    <div class="w-12 h-12 bg-blue-600/20 rounded-lg flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-4" data-en="Main Credentials" data-es="Credenciales">Main Credentials</h3>
+                    <p class="text-sm text-blue-300 font-bold mb-2">Master Power BI - UNIFATEC</p>
+                    <p class="text-xs text-slate-400" data-en="University Extension (60h) focused on ETL, DAX, and Data Modeling. Recognized by MEC." data-es="Extensión Universitaria (60h) enfocada en ETL, DAX y Modelado de Datos. Reconocida por el MEC.">University Extension (60h) focused on ETL, DAX, and Data Modeling. Recognized by MEC.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <p class="text-blue-400 font-medium tracking-widest uppercase text-sm mb-4" data-en="Showcase" data-es="Portafolio">Showcase</p>
+                <h2 class="text-4xl font-bold text-white" data-en="Business Cases" data-es="Casos de Negocio">Business Cases</h2>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="group bg-slate-900 rounded-xl border border-slate-800 overflow-hidden card-hover">
+                    <img src="Dashboard Business Case Accidentes de Transito.PNG" alt="Road Safety" class="w-full h-48 object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-white mb-2" data-en="Road Safety Analytics" data-es="Análisis de Seguridad Vial">Road Safety Analytics</h3>
+                        <p class="text-slate-400 text-sm mb-4" data-en="Analysis of 60,000+ federal traffic events, identifying root causes like 'Lack of Attention' (43% in MG)." data-es="Análisis de 60,000+ eventos de tráfico, identificando causas raíz como 'Falta de Atención' (43% en MG).">Analysis of 60,000+ federal traffic events.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-blue-600/20 text-blue-400 text-xs rounded-full">Geospatial</span>
+                            <span class="px-3 py-1 bg-blue-600/20 text-blue-400 text-xs rounded-full">Power BI</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="group bg-slate-900 rounded-xl border border-slate-800 overflow-hidden card-hover">
+                    <img src="Primer Business Case.PNG" alt="XSales" class="w-full h-48 object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-white mb-2" data-en="XSales Performance" data-es="Rendimiento de Ventas XSales">XSales Performance</h3>
+                        <p class="text-slate-400 text-sm mb-4" data-en="Executive monitor for $92.31M in revenue, focusing on profit margins and regional segmentation." data-es="Monitor ejecutivo de $92.31M en facturación, enfocado en márgenes de lucro y segmentación regional.">Executive monitor for $92.31M in revenue.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-blue-600/20 text-blue-400 text-xs rounded-full">Finance</span>
+                            <span class="px-3 py-1 bg-blue-600/20 text-blue-400 text-xs rounded-full">DAX</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="group bg-slate-900 rounded-xl border border-slate-800 overflow-hidden card-hover">
+                    <img src="Mi segundo dashboard Business Case fundamentos de DAX.PNG" alt="SoftX" class="w-full h-48 object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-white mb-2" data-en="HR Analytics - SoftX" data-es="HR Analytics - SoftX">HR Analytics - SoftX</h3>
+                        <p class="text-slate-400 text-sm mb-4" data-en="Workforce management dashboard analyzing turnover rates (18%) and a $1.39M monthly payroll." data-es="Dashboard de gestión de personal analizando tasas de rotación (18%) y una nómina mensual de $1.39M.">Workforce management dashboard.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-blue-600/20 text-blue-400 text-xs rounded-full">ETL</span>
+                            <span class="px-3 py-1 bg-blue-600/20 text-blue-400 text-xs rounded-full">HR Metrics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 px-6 bg-slate-900/50">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <p class="text-blue-400 font-medium tracking-widest uppercase text-sm mb-4" data-en="Contact" data-es="Contacto">Contact</p>
+                <h2 class="text-4xl font-bold text-white mb-4" data-en="Let's Build Something Together" data-es="Construyamos algo juntos">Let's Build Something Together</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6 mb-12">
+                <a href="mailto:helycamargo115@gmail.com" class="flex items-center gap-4 bg-slate-900 p-6 rounded-xl border border-slate-800 card-hover">
+                    <div class="w-12 h-12 bg-blue-600/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-slate-400 text-sm">Email</p>
+                        <p class="text-white font-medium text-xs">helycamargo115@gmail.com</p>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/hely-camargo115" target="_blank" class="flex items-center gap-4 bg-slate-900 p-6 rounded-xl border border-slate-800 card-hover">
+                    <div class="w-12 h-12 bg-blue-600/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-400" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-slate-400 text-sm">LinkedIn</p>
+                        <p class="text-white font-medium">/hely-camargo115</p>
+                    </div>
+                </a>
+                <a href="https://github.com/DevDragonite" target="_blank" class="flex items-center gap-4 bg-slate-900 p-6 rounded-xl border border-slate-800 card-hover">
+                    <div class="w-12 h-12 bg-blue-600/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-400" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-slate-400 text-sm">GitHub</p>
+                        <p class="text-white font-medium">/DevDragonite</p>
+                    </div>
+                </a>
+            </div>
+            <div class="text-center">
+                <a href="mailto:helycamargo115@gmail.com" class="inline-block bg-blue-600 hover:bg-blue-500 text-white px-12 py-4 rounded-lg font-bold transition-transform hover:scale-105 shadow-lg shadow-blue-600/20" data-en="HIRE ME / CONTACT" data-es="CONTRÁTAME / CONTACTO">HIRE ME / CONTACT</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 px-6 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-slate-500 text-sm">© 2026 Hely Saúl Camargo Riofrío. <span data-en="All rights reserved." data-es="Todos los derechos reservados.">All rights reserved.</span></p>
+        </div>
+    </footer>
+
+    <script>
+        const langToggle = document.getElementById('langToggle');
+        const currentLangSpan = document.getElementById('currentLang');
+        let currentLang = 'en';
+
+        langToggle.addEventListener('click', () => {
+            currentLang = currentLang === 'en' ? 'es' : 'en';
+            currentLangSpan.textContent = currentLang.toUpperCase();
+            
+            document.querySelectorAll('[data-en]').forEach(el => {
+                el.textContent = el.getAttribute(`data-${currentLang}`);
+            });
+            
+            document.querySelectorAll('[data-en-placeholder]').forEach(el => {
+                el.placeholder = el.getAttribute(`data-${currentLang}-placeholder`);
+            });
+            
+            document.documentElement.lang = currentLang;
+        });
+    </script>
+</body>
+</html>
